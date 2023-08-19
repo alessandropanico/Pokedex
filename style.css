@@ -1,0 +1,106 @@
+/* Regole comuni */
+.input-group {
+  width: 400px;
+  font-family: Arial;
+}
+
+.input-group-text {
+  width: 100px;
+}
+
+.form-control {
+  width: 500px;
+}
+
+#pokedex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pokemon-sprite {
+  max-width: 50px;
+}
+
+.card {
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 20%;
+}
+
+.card img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.card h3 {
+  margin-top: 10px;
+}
+
+.card:hover {
+  background-color: whitesmoke;
+}
+
+.btn {
+  border-radius: 20%;
+}
+
+
+
+/* Media query per schermi di dimensioni ridotte */
+@media (max-width: 767px) {
+  .input-group,
+  .input-group-text,
+  .form-control {
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #f0f0f0;
+  }
+
+  .pokemon-sprite {
+    max-width: 30px;
+  }
+
+  .btn {
+    padding: 20px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .input-group-text {
+    width: 60px;
+  }
+
+  #pokedex-container {
+    margin-top: 700px; /* Applica il margine al contenitore delle carte */
+  }
+
+  #cont {
+    height: 350px;
+    width: 100%;
+ }
+
+ #contenitore{
+  width: 100%;
+ }
+
+ #titolo
+ {
+  width: 70px;
+  height: auto;
+ }
+
+
+}
+
+

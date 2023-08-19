@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+
+    <!--INSERISCO BOOTSTRAP CON LE CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="pokeball.png">
+
+</head>
+
+<body>
+
+    <div id="contenitore" style="background-color: brown; height: 240px;">
+        <div class="d-flex justify-content-center">
+            <img src="International_Pokémon_logo.svg.png" id="titolo" style="width: 500px; margin-top:15px">
+        </div>
+    </div>
+
+    <div style="margin-bottom:50px">
+
+        <div class="container">
+            <!--CERCO PER NOME-->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-start">
+                        <div class="input-group mb-3" style="top:50px">
+                            <span class="input-group-text" id="basic-addon1">
+                                <img src="pokeball.png" style="width: 50px; margin-left: 12px;">
+                            </span>
+                            <input type="text" class="form-control" placeholder="Inserisci nome Pokémon"
+                                aria-label="Username" aria-describedby="basic-addon1" id="search-bar">
+                        </div>
+                    </div>
+                </div>
+
+                <!--CERCO PER NUMERO-->
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-center">
+                        <div class="input-group mb-3" style="top:50px">
+                            <span class="input-group-text" id="basic-addon1">
+                                <img src="pokeball.png" style="width: 50px; margin-left: 12px;">
+                            </span>
+                            <input type="number" class="form-control" placeholder="#Inserisci il numero del Pokémon"
+                                aria-label="Username" aria-describedby="basic-addon1" id="numero-bar">
+                        </div>
+                    </div>
+                </div>
+
+                <!--CERCO PER TIPO-->
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-end">
+                        <div class="input-group mb-3" style="top:50px">
+                            <span class="input-group-text" id="basic-addon1">
+                                <img src="pokeball.png" style="width: 50px; margin-left: 12px;">
+                            </span>
+                            <input type="text" class="form-control" placeholder="Inserisci il tipo del Pokèmon"
+                                aria-label="Username" aria-describedby="basic-addon1" id="type-bar">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--BOTTONI PER RICERCA TIPO-->
+    <div id="cont" style="background-color: brown; height: 110px; margin-top: 100px; ">
+        <div class="container">
+            <div class="text-center mb-3" style="padding: 10px;">
+
+                <button style="background-color: rgb(154, 154, 154);color:white"
+                    class="btn btn type-btn mx-1 d-inline-block" data-type="normal">Normal</button>
+                <button style="background-color: green;color:white" class="btn btn type-btn mx-1 d-inline-block"
+                    data-type="grass">Grass</button>
+                <button style="background-color: rgb(255, 38, 0);color:white"
+                    class="btn btn type-btn mx-1 d-inline-block" data-type="fire">Fire</button>
+                <button style="background-color: rgba(0, 199, 199, 0.675);color:white"
+                    class="btn btn type-btn mx-1 d-inline-block" data-type="water">Water</button>
+                <button style="background-color: rgb(192, 192, 0);color:white" class="btn btn type-btn mx-1 d-inline-block"
+                    data-type="electric">Electric</button>
+                <button style="background-color: skyblue;color:white" class="btn btn type-btn mx-1 d-inline-block"
+                    data-type="ice">Ice</button>
+                <button style="background-color: rgba(208, 108, 108, 0.349);color:white"
+                    class="btn btn type-btn mx-1 d-inline-block" data-type="fighting">Fighting</button>
+                <button style="background-color: purple;color:white" class="btn btn type-btn mx-1 d-inline-block"
+                    data-type="poison">Poison</button>
+                <button style="background-color: rgb(153, 88, 3);color:white"
+                    class="btn btn type-btn mx-1 d-inline-block" data-type="ground">Ground</button>
+                <button style="background-color: rgba(108, 234, 225, 0.619);color:white"
+                    class="btn btn type-btn mx-1 d-inline-block" data-type="flying">Flying</button>
+                <button style="background-color: rgb(203, 43, 117);color:white"
+                    class="btn btn type-btn mx-1 d-inline-block" data-type="psychic">Psychic</button>
+                <button style="background-color: rgb(125, 234, 0);color:white"
+                    class="btn btn type-btn mx-1 d-inline-block" data-type="bug">Bug</button>
+                <button style="background-color: rgb(180, 150, 93);color:white"
+                    class="btn btn type-btn mx-1 d-inline-block" data-type="rock">Rock</button>
+                <button style="background-color: rgb(73, 2, 120);color:white"
+                    class="btn btn type-btn mx-1 d-inline-block" data-type="ghost">Ghost</button>
+                <button style="background-color: rgb(5, 0, 107);color:white"
+                    class="btn btn type-btn mx-1 d-inline-block" data-type="dragon">Dragon</button>
+                <button style="background-color: rgb(26, 26, 26); color:white"
+                    class="btn btn type-btn mx-1 d-inline-block" data-type="dark">Dark</button>
+                <button style="background-color: rgb(79, 79, 79);color:white"
+                    class="btn btn type-btn mx-1 d-inline-block mt-2" data-type="steel">Steel</button>
+
+            </div>
+        </div>
+    </div>
+
+<section style="margin-top: 100px;">
+
+    <div id="pokedex-container"> <!-- Nuovo contenitore -->
+        
+        <div id="pokedex">
+            <div id="sprites">
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+
+<script src="lib.js"></script>
+
+</html>
