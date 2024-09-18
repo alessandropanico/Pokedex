@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-<!--PROVAA 2-->
+    <!--PROVAA 2-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokédex</title>
@@ -27,7 +27,7 @@
 
     <div id="contenitore" style="background-color: brown; height: 240px;">
         <div class="d-flex justify-content-center">
-            <img src="International_Pokémon_logo.svg.png" id="titolo" style="width: 500px; margin-top:15px">
+            <img src="International_Pokémon_logo.svg.png" id="titolo">
         </div>
     </div>
 
@@ -80,61 +80,57 @@
 
 
     <!--BOTTONI PER RICERCA TIPO-->
-    <div id="cont" style="background-color: brown; height: 110px; margin-top: 100px; ">
-        <div class="container">
-            <div class="text-center mb-3" style="padding: 10px;">
+    <div class="cont mb-3">
 
-                <button style="background-color: rgb(154, 154, 154);color:white"
-                    class="btn btn type-btn mx-1 d-inline-block" data-type="normal">Normal</button>
-                <button style="background-color: green;color:white" class="btn btn type-btn mx-1 d-inline-block"
-                    data-type="grass">Grass</button>
-                <button style="background-color: rgb(255, 38, 0);color:white"
-                    class="btn btn type-btn mx-1 d-inline-block" data-type="fire">Fire</button>
-                <button style="background-color: rgba(0, 199, 199, 0.675);color:white"
-                    class="btn btn type-btn mx-1 d-inline-block" data-type="water">Water</button>
-                <button style="background-color: rgb(192, 192, 0);color:white" class="btn btn type-btn mx-1 d-inline-block"
-                    data-type="electric">Electric</button>
-                <button style="background-color: skyblue;color:white" class="btn btn type-btn mx-1 d-inline-block"
-                    data-type="ice">Ice</button>
-                <button style="background-color: rgba(208, 108, 108, 0.349);color:white"
-                    class="btn btn type-btn mx-1 d-inline-block" data-type="fighting">Fighting</button>
-                <button style="background-color: purple;color:white" class="btn btn type-btn mx-1 d-inline-block"
-                    data-type="poison">Poison</button>
-                <button style="background-color: rgb(153, 88, 3);color:white"
-                    class="btn btn type-btn mx-1 d-inline-block" data-type="ground">Ground</button>
-                <button style="background-color: rgba(108, 234, 225, 0.619);color:white"
-                    class="btn btn type-btn mx-1 d-inline-block" data-type="flying">Flying</button>
-                <button style="background-color: rgb(203, 43, 117);color:white"
-                    class="btn btn type-btn mx-1 d-inline-block" data-type="psychic">Psychic</button>
-                <button style="background-color: rgb(125, 234, 0);color:white"
-                    class="btn btn type-btn mx-1 d-inline-block" data-type="bug">Bug</button>
-                <button style="background-color: rgb(180, 150, 93);color:white"
-                    class="btn btn type-btn mx-1 d-inline-block" data-type="rock">Rock</button>
-                <button style="background-color: rgb(73, 2, 120);color:white"
-                    class="btn btn type-btn mx-1 d-inline-block" data-type="ghost">Ghost</button>
-                <button style="background-color: rgb(5, 0, 107);color:white"
-                    class="btn btn type-btn mx-1 d-inline-block" data-type="dragon">Dragon</button>
-                <button style="background-color: rgb(26, 26, 26); color:white"
-                    class="btn btn type-btn mx-1 d-inline-block" data-type="dark">Dark</button>
-                <button style="background-color: rgb(79, 79, 79);color:white"
-                    class="btn btn type-btn mx-1 d-inline-block mt-2" data-type="steel">Steel</button>
+        <button class="btn btn type-btn normale" data-type="normal">Normal</button>
 
-            </div>
-        </div>
-    </div>
+        <button class="btn btn type-btn erba" data-type="grass">Grass</button>
 
-<section style="margin-top: 100px;">
+        <button class="btn btn type-btn fuoco" data-type="fire">Fire</button>
 
-    <div id="pokedex-container"> <!-- Nuovo contenitore -->
-        
-        <div id="pokedex">
-            <div id="sprites">
-            </div>
-        </div>
+        <button class="btn btn type-btn acqua" data-type="water">Water</button>
+
+        <button class="btn btn type-btn elettro" data-type="electric">Electric</button>
+
+        <button class="btn btn type-btn ghiaccio" data-type="ice">Ice</button>
+
+        <button class="btn btn type-btn lotta" data-type="fighting">Fighting</button>
+
+        <button class="btn btn type-btn veleno" data-type="poison">Poison</button>
+
+        <button class="btn btn type-btn terra" data-type="ground">Ground</button>
+
+        <button class="btn btn type-btn volante" data-type="flying">Flying</button>
+
+        <button class="btn btn type-btn psico" data-type="psychic">Psychic</button>
+
+        <button class="btn btn type-btn coleottero" data-type="bug">Bug</button>
+
+        <button class="btn btn type-btn roccia" data-type="rock">Rock</button>
+
+        <button class="btn btn type-btn spettro" data-type="ghost">Ghost</button>
+
+        <button class="btn btn type-btn drago" data-type="dragon">Dragon</button>
+
+        <button class="btn btn type-btn buio" data-type="dark">Dark</button>
+
+        <button class="btn btn type-btn acciaio" data-type="steel">Steel</button>
+
 
     </div>
 
-</section>
+    <section style="margin-top: 100px;">
+
+        <div id="pokedex-container"> <!-- Nuovo contenitore -->
+
+            <div id="pokedex">
+                <div id="sprites">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
 
 </body>
 
