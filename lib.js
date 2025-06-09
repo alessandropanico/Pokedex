@@ -7,7 +7,7 @@ fetch('./pokemon.json-master/pokedex.json')
         // Qui puoi manipolare i dati JSON ottenuti dalla risposta
         //console.log(data);
         // Esegui altre operazioni sul tuo Pokedex, come la ricerca
-        pokemon = data.slice(0, 386) //Si può ridurrre il numero di Pokémon a piacimento ("0" vale "1")
+        pokemon = data.slice(0, 493) //Si può ridurrre il numero di Pokémon a piacimento ("0" vale "1")
         console.log(pokemon)
         generateCard(pokemon); // Chiamata alla funzione per generare le card dei Pokémon
 
