@@ -91,13 +91,18 @@
   font-family: Arial;
 }
 
-input::-webkit-inner-spin-button{
+input::-webkit-inner-spin-button {
   display: none;
 }
 
 #titolo {
   width: 500px;
   margin-top: 15px
+}
+
+#contenitore {
+  background-color: brown;
+  height: 240px;
 }
 
 .input-group-text {
@@ -142,25 +147,44 @@ input::-webkit-inner-spin-button{
   background-color: whitesmoke;
 }
 
-.btn {
-  border-radius: 20%;
-  margin-left: 20px;
-  width: 20vw;
-}
 
 .type-btn {
   width: 10vw;
+  border-radius: 2vw;
+  border: none;
+  height: 5vh;
+  width: 8vw;
 }
+
+.type-btn:hover {
+  background-color: inherit !important;
+  color: inherit !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
 
 .cont {
   background-color: brown;
-  height: 110px;
+  height: auto;
   margin-top: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: scroll;
   overflow-y: hidden;
+  padding: 1vw;
+  gap: 0.5vw;
+}
+
+
+
+.contRicerca {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2%;
+  margin-top: 10vh;
 }
 
 @media screen and (max-width:600px) {
