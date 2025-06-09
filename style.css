@@ -1,7 +1,6 @@
 .normale {
   background-color: rgb(154, 154, 154);
   color: white;
-
 }
 
 .erba {
@@ -148,23 +147,32 @@ input::-webkit-inner-spin-button {
 }
 
 
+/* Stile base per i bottoni */
 .type-btn {
-  width: 10vw;
-  border-radius: 2vw;
-  border: none;
-  height: 5vh;
+  display: inline-block;
   width: 8vw;
+  height: 5vh;
+  border-radius: 2vw;
+  text-align: center;
+  line-height: 5vh;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
+/* Effetto luminoso al passaggio del mouse */
 .type-btn:hover {
-  background-color: inherit !important;
-  color: inherit !important;
-  box-shadow: none !important;
-  transform: none !important;
-  background-image: none !important;
-  filter: none !important;
+  box-shadow: 0 0 15px 5px rgba(255, 255, 200, 0.7);
+  transform: scale(1.05);
 }
 
+
+.contPoke{
+  margin-top: 10vh;
+}
 
 .cont {
   background-color: brown;
