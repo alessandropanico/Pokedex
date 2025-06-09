@@ -161,13 +161,15 @@ input::-webkit-inner-spin-button {
   color: inherit !important;
   box-shadow: none !important;
   transform: none !important;
+  background-image: none !important;
+  filter: none !important;
 }
 
 
 .cont {
   background-color: brown;
   height: auto;
-  margin-top: 100px;
+  margin-top: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
